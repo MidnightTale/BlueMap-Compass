@@ -34,5 +34,5 @@ do not add a `LICENSE` file here.
 - Keep the plugin name, permission node, config keys, and upstream attribution stable.
 - This is a **public** repository: never add host paths, usernames, IPs, seeds, world coordinates,
   server or instance IDs, logs, config dumps, backups, or secrets.
-- Exact deploy pins (source commit + jar SHA-256) live in the private Awepeeps-Minecraft-Deployment
+- Exact deploy pins (source commit + jar SHA-256) live in the private awepeeps-minecraft-deployment
   repository, never here.
