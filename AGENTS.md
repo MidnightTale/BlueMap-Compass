@@ -18,10 +18,13 @@ do not add a `LICENSE` file here.
 
 ## Build and test
 
-- Build and test: `./gradlew --no-daemon clean test build` (Gradle wrapper 9.1.0, JDK 25).
+- Requires JDK 25; `just install` installs Temurin 25 and the pinned tools via mise.
+- `just check` — format, workflow lint, one clean test+build.
+- `just reproducible` — two clean builds, `cmp`, and the SHA-256; runs on `main` and on
+  release pull requests (a PR that changes `CHANGELOG.md`).
 - Reproducible containerized build: `bash automation/build-bluemap-compass.sh`.
 - Output jar: `build/libs/awepeeps-bluemap-compass-1.4.1-awepeeps.12.jar`.
-- Open changes as a pull request against `main`; CI rebuilds twice and compares the jar bytes.
+- Open changes as a pull request against `main`.
 
 ## Native defaults
 
