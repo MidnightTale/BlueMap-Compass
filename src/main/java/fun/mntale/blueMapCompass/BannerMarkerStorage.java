@@ -143,4 +143,4 @@ public class BannerMarkerStorage {
             return w == null ? null : new Location(w, x, y, z);
         }
     }
-} 
+}

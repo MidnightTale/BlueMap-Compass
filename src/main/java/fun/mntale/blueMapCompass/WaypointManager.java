@@ -240,7 +240,7 @@ public class WaypointManager {
                     });
                     player.showEntity(plugin, spawnedDisplay);
                     waypoints.computeIfAbsent(player.getUniqueId(), k -> new ConcurrentHashMap<>()).put(marker.id(), spawnedDisplay);
-                    
+
                     // Spawn new TextDisplay
                     Location spawnedTextLoc = getBillboardLocation(player, target, 48);
                     spawnedTextLoc.setY(player.getEyeLocation().getY() + getDeterministicYOffset(marker.id()));
@@ -465,4 +465,4 @@ public class WaypointManager {
         }
         // No display logic here; global task will handle display spawning/updating
     }
-} 
+}

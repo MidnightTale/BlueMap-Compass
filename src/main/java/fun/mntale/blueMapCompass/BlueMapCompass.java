@@ -70,7 +70,7 @@ public final class BlueMapCompass extends JavaPlugin implements Listener {
         if (!player.hasPermission("bluemapcompass.use")) {
             return;
         }
-        
+
         if (isCompass(item) && player.isSneaking()) {
             if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 org.bukkit.block.Block target = event.getClickedBlock();
